@@ -28,6 +28,7 @@ public class SignUpActivity extends AppCompatActivity {
     private Button reg_login_btn;
     private ProgressBar reg_progress;
 
+
     private FirebaseAuth mAuth;
 
     @Override
