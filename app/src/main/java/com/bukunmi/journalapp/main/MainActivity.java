@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements RecordAdapter.Ite
         setSupportActionBar(toolbar);
 
         mRecyclerView = findViewById(R.id.journal_rv);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+        mRecyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this, 2));
         mAdapter = new RecordAdapter(this, this);
         mRecyclerView.setAdapter(mAdapter);
 
