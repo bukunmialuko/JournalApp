@@ -34,3 +34,19 @@ After being authenticated, the use is redirected to the Main Dashboard Page, whi
 
 * Add New Note
 * See their previously saved notes
+
+<img src="https://github.com/bukunmialuko/JournalApp//blob/master/screenshots/Screenshot_4.png" width="280"/>    
+
+### View Record
+On click of a journal item, the saved data can ve viewd (Title description and the tag)
+<img src="https://github.com/bukunmialuko/JournalApp//blob/master/screenshots/Screenshot_5.png" width="280"/>   
+
+### Edit Record
+Here, a saved record can be edited or updated
+<img src="https://github.com/bukunmialuko/JournalApp//blob/master/screenshots/Screenshot_3.png" width="280"/>   
+
+
+
+### Extra Features
+* Backup User and Medicine Data to their Google Drive - Not fully complete
+
