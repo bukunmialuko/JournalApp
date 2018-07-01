@@ -25,7 +25,11 @@
             android:label="@string/title_activity_main" />
         <activity android:name=".addrecord.AddRecordActivity" />
         <activity android:name=".account.SignInActivity" />
-        <activity android:name=".account.SignUpActivity"></activity>
+        <activity android:name=".account.SignUpActivity" />
+        <activity
+            android:name=".addrecord.ViewRecordActivity"
+            android:label="@string/title_activity_view_journal"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

@@ -17,12 +17,11 @@ import android.view.View;
 
 import com.bukunmi.journalapp.R;
 import com.bukunmi.journalapp.account.SignInActivity;
-import com.bukunmi.journalapp.account.SignUpActivity;
 import com.bukunmi.journalapp.addrecord.AddRecordActivity;
+import com.bukunmi.journalapp.addrecord.ViewRecordActivity;
 import com.bukunmi.journalapp.data.AppDatabase;
 import com.bukunmi.journalapp.data.RecordEntry;
 import com.bukunmi.journalapp.util.AppExecutors;
-import com.google.android.gms.auth.api.Auth;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.List;
@@ -80,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements RecordAdapter.Ite
             @Override
             public void onClick(View view) {
 
-                Intent newRecord = new Intent(MainActivity.this, AddRecordActivity.class);
+                Intent newRecord = new Intent(MainActivity.this, ViewRecordActivity.class);
                 startActivity(newRecord);
             }
         });
