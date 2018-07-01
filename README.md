@@ -48,5 +48,7 @@ Here, a saved record can be edited or updated
 
 
 ### Extra Features
-* Backup User and Medicine Data to their Google Drive - Not fully complete
-
+* Persisted data to firebase - Not fully complete
+* UI test - Not fully complete
+* JUnit test - Not fully complete
+* Integrated Circle CI - Not fully complete
