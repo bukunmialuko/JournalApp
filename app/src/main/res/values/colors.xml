@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3ba5ff</color>
+    <color name="colorPrimaryDark">#2487ff</color>
+    <color name="colorAccent">#1b95ff</color>
+    <color name="colorBackground">#B9D8F4</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteTransparent">#80ffffff</color>
+
+    <color name="colorOne">#262938</color>
+    <color name="colorTwo">#181A24</color>
+    <color name="colorThree">#FF4081</color>
+
+
+    <color name="colorSplashScreen">#B9D8F4</color>
+
+    <!-- colors taskEntrytask tag selection -->
+    <color name="materialRed">#E74C3C</color>
+    <color name="materialOrange">#E67E22</color>
+    <color name="materialYellow">#F1C40F</color>
+</resources>
