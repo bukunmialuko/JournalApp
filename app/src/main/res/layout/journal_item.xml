@@ -22,7 +22,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:textSize="22sp"
+            android:textSize="18sp"
+            android:maxLines="2"
             android:textStyle="bold"
             android:id="@+id/recordTitle"
             android:text="Title here"/>
@@ -31,7 +32,9 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:id="@+id/recordUpdatedAt"
-            android:text="The short description goes here i have to test the line"/>
+            android:text="The short description goes here i have to test the line"
+            android:drawableLeft="@drawable/ic_date"
+            android:drawablePadding="2dp"/>
 
     </LinearLayout>
 

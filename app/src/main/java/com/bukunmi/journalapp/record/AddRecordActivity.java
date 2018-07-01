@@ -1,4 +1,4 @@
-package com.bukunmi.journalapp.addrecord;
+package com.bukunmi.journalapp.record;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -18,7 +18,6 @@ import com.bukunmi.journalapp.data.AppDatabase;
 import com.bukunmi.journalapp.data.RecordEntry;
 import com.bukunmi.journalapp.util.AppExecutors;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
@@ -69,7 +68,6 @@ public class AddRecordActivity extends AppCompatActivity {
         current_user_id = mAuth.getCurrentUser().getUid();
         firebaseFirestore = FirebaseFirestore.getInstance();
         firebaseFirestore.setFirestoreSettings(settings);
-
 
 
         mDb = AppDatabase.getInstance(getApplicationContext());

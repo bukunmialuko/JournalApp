@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
@@ -17,8 +18,8 @@ import android.view.View;
 
 import com.bukunmi.journalapp.R;
 import com.bukunmi.journalapp.account.SignInActivity;
-import com.bukunmi.journalapp.addrecord.AddRecordActivity;
-import com.bukunmi.journalapp.addrecord.ViewRecordActivity;
+import com.bukunmi.journalapp.record.AddRecordActivity;
+import com.bukunmi.journalapp.record.ViewRecordActivity;
 import com.bukunmi.journalapp.data.AppDatabase;
 import com.bukunmi.journalapp.data.RecordEntry;
 import com.bukunmi.journalapp.util.AppExecutors;
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements RecordAdapter.Ite
         setSupportActionBar(toolbar);
 
         mRecyclerView = findViewById(R.id.journal_rv);
-        mRecyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this, 2));
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
         mAdapter = new RecordAdapter(this, this);
         mRecyclerView.setAdapter(mAdapter);
 
@@ -79,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements RecordAdapter.Ite
             @Override
             public void onClick(View view) {
 
-                Intent newRecord = new Intent(MainActivity.this, ViewRecordActivity.class);
+                Intent newRecord = new Intent(MainActivity.this, AddRecordActivity.class);
                 startActivity(newRecord);
             }
         });
@@ -142,8 +143,8 @@ public class MainActivity extends AppCompatActivity implements RecordAdapter.Ite
     @Override
     public void onItemClickListener(int itemId) {
         // Launch AddTaskActivity adding the itemId as an extra in the intent
-        Intent intent = new Intent(MainActivity.this, AddRecordActivity.class);
-        intent.putExtra(AddRecordActivity.EXTRA_TASK_ID, itemId);
+        Intent intent = new Intent(MainActivity.this, ViewRecordActivity.class);
+        intent.putExtra(ViewRecordActivity.EXTRA_TASK_ID, itemId);
         startActivity(intent);
     }
 }

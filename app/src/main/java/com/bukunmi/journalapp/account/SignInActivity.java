@@ -14,7 +14,6 @@ import android.widget.Toast;
 import com.bukunmi.journalapp.R;
 import com.bukunmi.journalapp.main.MainActivity;
 import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;

@@ -1,4 +1,4 @@
-package com.bukunmi.journalapp.addrecord;
+package com.bukunmi.journalapp.record;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;

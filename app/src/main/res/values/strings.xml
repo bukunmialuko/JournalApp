@@ -14,7 +14,7 @@
     <!-- This etaskEntrytask has a unicode character for "..." = "&#8230;" -->
     <string name="edit_record_title">Title&#8230;</string>
     <string name="edit_record_description">Describe your feeling&#8230;</string>
-    <string name="tag_string">Mood</string>
+    <string name="tag_string">Feeling</string>
 
     <string name="normal_feeling">Normal</string>
     <string name="good_feeling">Good</string>
